@@ -1,3 +1,10 @@
+
+# Model to import for util file.
+# json-to extract the columns form json column file
+#pickel to extract from pickle file
+#and np
+
+
 import json
 import pickle
 import numpy as np
@@ -6,9 +13,9 @@ __locations = None
 __data_columns = None
 __model = None
 __floor = None
-
+#cration of get estimated rent function.
 def get_estimated_rent(newlyConst, balcony, hasKitchen, cellar, livingSpace, lift, noRooms, garden, floor, location):
-    # Strip any extra whitespace or newlines
+    # location and floor values are found using indexing.
     location = location.lower()
     floor = floor.lower()
 
@@ -39,7 +46,7 @@ def get_estimated_rent(newlyConst, balcony, hasKitchen, cellar, livingSpace, lif
 
     prediction = __model.predict([x])[0]
     return round(float(np.exp(prediction)), 0)
-
+# getting variable from pickle and json file
 def load_saved_artifactes():
     print("loading saved artifacts...start")
     global __data_columns
@@ -55,7 +62,7 @@ def load_saved_artifactes():
     with open("./artifacts/berlin_price_model.pickle", 'rb') as f:
         __model = pickle.load(f)
     print("loading saved artifacts...done")
-
+#creting funtion for location and floor columns
 def get_location_name():
     return __locations
 
