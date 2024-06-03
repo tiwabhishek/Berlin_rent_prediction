@@ -1,6 +1,6 @@
 [TOC]
 
-
+[![](Website ui)](client/image/Screenshot 2024-06-03 214951.png)
 # [Berlin rent prediction using Machine learning](http://ec2-16-170-235-79.eu-north-1.compute.amazonaws.com "Berlin rent prediction using Machine learning").
 - Use http:// to access the website.
 - The development of the model is thoroughly documented in the notebook [file](model/berlin.ipynb "file").
@@ -14,5 +14,6 @@
 - Server was created using flask module, to handle https, CORS used. Port was hosted using [Nginx](httphttps://nginx.org/en/download.html:// "Nginx"), Its [configration file](nignix_file "configration file") needs to be added in sites-availbe folder in /etc/nginx/.
 
 #### Website and Hosting it in EC2 on AWS.
-CSS, HTML, and Java script files are present [client](client "client") folder. 
+CSS, html and Java script files are present [client](client "client") folder. 
 An EC2 server was used to host the server and its Public address was used Which can be accessed through the link attached to the head of read.md.
+
