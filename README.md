@@ -3,7 +3,7 @@
 
 # Berlin rent prediction using Machine learning.
 - The development of the model is thoroughly documented in the notebook [file](model/berlin.ipynb "file").
-- The document of server, util, and web page files are in the relevant section of this read.md file.
+- The [server](server "server"), util, and web page files document are in this read's relevant section.md file.
 
 #### Data procurement
 - Data was procured from the kegel website with  this [Link.](https://www.kaggle.com/datasets/corrieaar/apartment-rental-offers-in-germany "Link.")
