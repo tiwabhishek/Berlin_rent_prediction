@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Berlin Rent Prediction</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+	<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="img"></div>
+
+<form class="form">
+	<h2>Berlin Rent Prediction model, created by Abhishek Tiwari</h2>
+	</div>
+</form>
+
+<form class="form">
+	<h2>Living Space (Square meter)</h2>
+    <input class="area"  type="text" id="uiSqm" class="floatLabel" name="Squaremeter" value="20">
+	<h2>Number Of Rooms. For each room minmum living spcace not less then 25 meter square</h2>
+	<div class="switch-container">
+		<div class="switch-field">
+			<input type="radio" id="radio-no_of_rooms-1" name="uiNo_of_rooms" value="1"/>
+			<label for="radio-no_of_rooms-1">1</label>
+			<input type="radio" id="radio-no_of_rooms-2" name="uiNo_of_rooms" value="2" checked/>
+			<label for="radio-no_of_rooms-2">2</label>
+			<input type="radio" id="radio-no_of_rooms-3" name="uiNo_of_rooms" value="3"/>
+			<label for="radio-no_of_rooms-3">3</label>
+			<input type="radio" id="radio-no_of_rooms-4" name="uiNo_of_rooms" value="4"/>
+			<label for="radio-no_of_rooms-4">4</label>
+			<input type="radio" id="radio-no_of_rooms-5" name="uiNo_of_rooms" value="5"/>
+			<label for="radio-no_of_rooms-5">5</label>
+			<input type="radio" id="radio-no_of_rooms-6" name="uiNo_of_rooms" value="6"/>
+			<label for="radio-no_of_rooms-6">6</label>
+			<input type="radio" id="radio-no_of_rooms-7" name="uiNo_of_rooms" value="7"/>
+			<label for="radio-no_of_rooms-7">7</label>
+			<input type="radio" id="radio-no_of_rooms-8" name="uiNo_of_rooms" value="8"/>
+			<label for="radio-no_of_rooms-8">8</label>
+			<input type="radio" id="radio-no_of_rooms-9" name="uiNo_of_rooms" value="9"/>
+			<label for="radio-no_of_rooms-9">9</label>
+			<input type="radio" id="radio-no_of_rooms-10" name="uiNo_of_rooms" value="10"/>
+			<label for="radio-no_of_rooms-10">10</label>
+	
+		</div>
+	</div>
+</form>
+<form class="form">
+	<h2>Balcony</h2>
+	<div class="switch-container">
+		<div class="switch-field">
+			<input type="radio" id="radio-Balcony-1" name="uiBalcony" value="1"/>
+			<label for="radio-Balcony-1">Yes</label>
+			<input type="radio" id="radio-Balcony-2" name="uiBalcony" value="0" checked/>
+			<label for="radio-Balcony-2">No</label>
+		</div>	
+	</div>
+	<h2>Newly constructed</h2>
+	<div class="switch-container">
+		<div class="switch-field">
+			<input type="radio" id="radio-Newly_constructed-3" name="uiNewly_constructed" value="1"/>
+			<label for="radio-Newly_constructed-3">Yes</label>
+			<input type="radio" id="radio-Newly_constructed-4" name="uiNewly_constructed" value="0" checked/>
+			<label for="radio-Newly_constructed-4">No</label>
+		</div>
+	</div>
+	<h2>Kitchen</h2>
+	<div class="switch-container">								
+		<div class="switch-field">
+			<input type="radio" id="radio-Kitchen-5" name="uiKitchen" value="1"/>
+			<label for="radio-Kitchen-5">Yes</label>
+			<input type="radio" id="radio-Kitchen-6" name="uiKitchen" value="0" checked/>
+			<label for="radio-Kitchen-6">No</label>
+		</div>
+	</div>	
+	<h2>Cellar</h2>
+	<div class="switch-container">	
+		<div class="switch-field">
+			<input type="radio" id="radio-Cellar-7" name="uiCellar" value="1"/>
+			<label for="radio-Cellar-7">Yes</label>
+			<input type="radio" id="radio-Cellar-8" name="uiCellar" value="0" checked/>
+			<label for="radio-Cellar-8">No</label>
+		</div>
+	</div>
+
+	<h2>Lift</h2>
+	<div class="switch-container">	
+		<div class="switch-field">
+			<input type="radio" id="radio-Lift-9" name="uiLift" value="1"/>
+			<label for="radio-Lift-9">Yes</label>
+			<input type="radio" id="radio-Lift-10" name="uiLift" value="0" checked/>
+			<label for="radio-Lift-10">No</label>
+		</div>	
+	</div>
+
+	<h2>Garden</h2>
+	<div class="switch-container">	
+		<div class="switch-field">
+			<input type="radio" id="radio-Garden-11" name="uiGarden" value="1"/>
+			<label for="radio-Garden-11">Yes</label>
+			<input type="radio" id="radio-Garden-12" name="uiGarden" value="0" checked/>
+			<label for="radio-Garden-12">No</label>
+		</div>
+	</div>
+</form>
+<form class="form">
+	<h2>Location</h2>
+
+  <select class="dropDownMenu" name="" id="uiLocations">
+    <option value="" disabled="disabled" selected="selected">Choose a Location</option>
+		<option>adlershof, treptow</option>
+        <option>alt-hohenschönhausen, hohenschönhausen</option>
+  </select>
+  
+  <h2>floor</h2>
+  <select class="dropDown_Menu" name="" id="uifloor">
+    <option value="" disabled="disabled" selected="selected">Choose a floor</option>
+		<option>Apartment</option>
+        <option>loft</option>
+  </select>
+
+  	
+	
+	<button class="submit" onclick="onClickedEstimateRent()" type="button">Estimate Rent</button>
+	<div id="uiEstimatedRent" class="result">	<h2></h2> </div>
+</form>
+</body>
+</html>
