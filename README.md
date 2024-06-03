@@ -14,5 +14,5 @@
 - Server was created using flask module, to handle https, CORS used. Port was hosted using [Nginx](httphttps://nginx.org/en/download.html:// "Nginx"), Its [configration file](nignix_file "configration file") needs to be added in sites-availbe folder in /etc/nginx/.
 
 #### Website and Hosting it in EC2 on AWS.
-CSS, html and Java script files are present [client](client "client") folder. 
-An EC2 sever was used to host the server and its Public address is used as the Which can be accesd throught link attached to the head of read.md.
+CSS, HTML, and Java script files are present [client](client "client") folder. 
+An EC2 server was used to host the server and its Public address was used Which can be accessed through the link attached to the head of read.md.
