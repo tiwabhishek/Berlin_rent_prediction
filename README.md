@@ -1,6 +1,7 @@
 [TOC]
 
-[![Website UI](Website UI)](client/image/Screenshot 2024-06-03 214951.png)
+## Website UI
+![Website UI](client/image/Screenshot%202024-06-03%20214951.png)
 # [Berlin rent prediction using Machine learning](http://ec2-16-170-235-79.eu-north-1.compute.amazonaws.com "Berlin rent prediction using Machine learning").
 - Use http:// to access the website.
 - The development of the model is thoroughly documented in the notebook [file](model/berlin.ipynb "file").
