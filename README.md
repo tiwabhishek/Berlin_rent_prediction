@@ -1,6 +1,6 @@
 [TOC]
 
-[![](Website ui)](client/image/Screenshot 2024-06-03 214951.png)
+[![Website UI](Website UI)](client/image/Screenshot 2024-06-03 214951.png)
 # [Berlin rent prediction using Machine learning](http://ec2-16-170-235-79.eu-north-1.compute.amazonaws.com "Berlin rent prediction using Machine learning").
 - Use http:// to access the website.
 - The development of the model is thoroughly documented in the notebook [file](model/berlin.ipynb "file").
@@ -16,4 +16,3 @@
 #### Website and Hosting it in EC2 on AWS.
 CSS, html and Java script files are present [client](client "client") folder. 
 An EC2 server was used to host the server and its Public address was used Which can be accessed through the link attached to the head of read.md.
-
