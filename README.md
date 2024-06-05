@@ -6,7 +6,7 @@
 ## A fully functional hosted on AWS ec2 server that predicts (predictor: Xgboost)rent of different types of Apartments in different localities of Berlin.
 - Use http:// to access the website.
 - The development of the model is thoroughly documented in the notebook [file](model/berlin.ipynb "file").
-- The [server](server "server"), util, and [web page](client "web page") files document are in this read's relevant section.md file.
+- The [server](server "server"), util, and [web page](client "web page") files document are in relevant section.
 
 #### Data procurement
 - Data was procured from the kegel website with  this [Link.](https://www.kaggle.com/datasets/corrieaar/apartment-rental-offers-in-germany "Link.")
